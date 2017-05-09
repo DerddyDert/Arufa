@@ -1,4 +1,4 @@
-### **News: We have opened up our offical forums, click [here](http://arufa.ml/index.php)**
+### **News: We have opened up our offical forums, click [here](http://arufa.ml/index.php). Arufa is becoming Dead please contribute to keep it alive!**
 # ![Arufa](http://i.imgur.com/lRJl9gu.jpg)
 ![Status](https://img.shields.io/badge/stability-alpha-ff69b4.svg)<br>
 ![GitHub contributors](https://img.shields.io/github/contributors/ArufaTeam/Arufa.svg)<br>
