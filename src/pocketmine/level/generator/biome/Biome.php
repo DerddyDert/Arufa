@@ -24,6 +24,8 @@ namespace pocketmine\level\generator\biome;
 use pocketmine\block\Block;
 use pocketmine\level\ChunkManager;
 use pocketmine\level\generator\hell\HellBiome;
+use pocketmine\level\generator\normal\biome\MesaBiome;
+use pocketmine\level\generator\normal\biome\BeachBiome;
 use pocketmine\level\generator\normal\biome\DesertBiome;
 use pocketmine\level\generator\normal\biome\ForestBiome;
 use pocketmine\level\generator\normal\biome\IcePlainsBiome;
@@ -48,18 +50,14 @@ abstract class Biome{
 	const TAIGA = 5;
 	const SWAMP = 6;
 	const RIVER = 7;
-
+	const MESA = 37;
+	const MESA_PLATEAU_F = 38;
+	const MESA_PLATEAU = 39;
 	const HELL = 8;
-
+	const BEACH = 16;
 	const ICE_PLAINS = 12;
-
-
 	const SMALL_MOUNTAINS = 20;
-
-
 	const BIRCH_FOREST = 27;
-
-
 	const MAX_BIOMES = 256;
 
 	/** @var Biome[] */
@@ -106,13 +104,11 @@ abstract class Biome{
 		self::register(self::TAIGA, new TaigaBiome());
 		self::register(self::SWAMP, new SwampBiome());
 		self::register(self::RIVER, new RiverBiome());
-
 		self::register(self::ICE_PLAINS, new IcePlainsBiome());
-
-
+		self::register(self::BEACH, new BeachBiome());
+		self::register(self::MESA, new MesaBiome());
 		self::register(self::SMALL_MOUNTAINS, new SmallMountainsBiome());
 		self::register(self::HELL, new HellBiome());
-
 		self::register(self::BIRCH_FOREST, new ForestBiome(ForestBiome::TYPE_BIRCH));
 	}
 
