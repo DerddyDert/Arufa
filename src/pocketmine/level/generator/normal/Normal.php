@@ -133,7 +133,10 @@ class Normal extends Generator{
 			if($rainfall < 0.25){
 				if($temperature < 0.7){
 					return Biome::OCEAN;
-				}elseif($temperature < 0.85){
+				}else{
+					return Biome::BEACH;
+				}
+			}elseif($temperature < 0.85){
 					return Biome::RIVER;
 				}else{
 					return Biome::SWAMP;
@@ -145,6 +148,8 @@ class Normal extends Generator{
 					return Biome::PLAINS;
 				}else{
 					return Biome::DESERT;
+				}else{
+					return Biome::MESA;
 				}
 			}elseif($rainfall < 0.80){
 				if($temperature < 0.25){
@@ -176,6 +181,8 @@ class Normal extends Generator{
 		$this->selector->addBiome(Biome::getBiome(Biome::ICE_PLAINS));
 		$this->selector->addBiome(Biome::getBiome(Biome::SMALL_MOUNTAINS));
 		$this->selector->addBiome(Biome::getBiome(Biome::BIRCH_FOREST));
+		$this->selector->addBiome(Biome::getBiome(Biome::BEACH));
+		$this->selector->addBiome(Biome::getBiome(Biome::MESA));
 
 		$this->selector->recalculate();
 
